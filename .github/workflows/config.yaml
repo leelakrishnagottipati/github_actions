@@ -8,5 +8,5 @@ jobs:
       # - run: sudo apt install python  
       - run: python main.py
         env:
-            first_name : ${{FNAME}}
-            last_name : ${{LNAME}}
+            first_name : ${{secrets.FNAME}}
+            last_name : ${{secrets.LNAME}}
